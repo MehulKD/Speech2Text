@@ -82,7 +82,7 @@ public class MainActivity extends ActionBarActivity {
 
         switch (requestCode) {
             case RESULT_SPEECH: {
-                if (resultCode == RESULT_OK && null != data) {
+                if (resultCode == RESULT_OK && data!=null) {
 
                     ArrayList<String> text = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
